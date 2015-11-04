@@ -49,8 +49,8 @@ from auth import *                    # wildcard import: what did I just import 
 
 ```py
 # GOOD
-import sys
 import os
+import sys
 
 from django.db import models
 from django.db.contrib.auth.models import User
