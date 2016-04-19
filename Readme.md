@@ -208,6 +208,7 @@ We follow these guidelines to produce legible code that adheres to the 79-charac
 - The contents of block expressions should be indented with 4 spaces relative to the start of the
   first and last lines.
 - Comma-separated arguments to a block parenthetical expression should all be on separate lines.
+- Any comma-seperated list over multiple lines should use a trailing comma
 
 ```py
 # BAD
@@ -244,6 +245,10 @@ user = User.objects.filter(name__icontains='joe'). \
 'boo' : 'qux',
 'dog' : 'cat'}]     # close paren is not the first character
 
+# Also true for function arguments
+SomeClass.someMethod(foo, bar, baz,
+  qux, dog)
+
 # GOOD
 
 words = [
@@ -255,7 +260,7 @@ words = [
     'over',
     'the',
     'lazy',
-    'fox'
+    'fox', # note the trailing comma
 ]
 
 user = (
@@ -267,8 +272,20 @@ user = (
     'foo': 'bar',
     'biz': 'bang',
     'boo': 'qux',
-    'dog': 'cat'
+    'dog': 'cat',  # again: trailing comma should be used
 }]
+
+# Also true for function declarations:
+def addThreeThings(
+    argument_one,
+    argument_two,
+    trailing_comma,  # again
+):
+    return (
+        argument_one + 
+        argument_two +
+        trailing_comma
+    )
 ```
 
 ### More examples
@@ -307,7 +324,7 @@ kwargs = dict(
         'standalone_title',
         'description',
         'tags',
-        'hide'
+        'hide',  # trailing comma
     ]
 )
 ```
