@@ -123,7 +123,7 @@ Longer description.
 The rules here may seem like overkill, especially the need to document every argument and return value. I can say from experience two things: it often does seem like overkill when writing it (especially when the docstring is longer than the function!) but I've almost never thought it was overkill when reading unfamiliar code. You may find, as you write the docstring, you're putting down something that wasn't as obvious as you thought it was:
 
 ```py
-def WriteTimestamp(now):
+def write_timestamp(now):
     """Write the current time to stdout in an arbitrary user-readable format.
 
     Arguments:
@@ -178,6 +178,9 @@ class FooTestCase(TestCase):
         # ...
 ```
 
+## Naming
+
+Use CapitalizedCamelCase for class names, snake_case for everything else. Use CAPITALIZED_SNAKE_CASE for global consts. See the [Google style guide](https://google.github.io/styleguide/pyguide.html#Naming) for more.
 
 ## Unused variables
 
@@ -276,7 +279,7 @@ user = (
 }]
 
 # Also true for function declarations:
-def addThreeThings(
+def add_three_things(
     argument_one,
     argument_two,
     trailing_comma,  # again
