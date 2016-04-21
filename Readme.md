@@ -180,7 +180,7 @@ class FooTestCase(TestCase):
 
 ## Naming
 
-Use CapitalizedCamelCase for class names, snake_case for everything else. Use CAPITALIZED_SNAKE_CASE for global consts. See [Google Style Guide](https://google.github.io/styleguide/pyguide.html#Naming) for more.
+Use CapitalizedCamelCase for class names, snake_case for everything else. Use CAPITALIZED_SNAKE_CASE for global consts. See the [Google style guide](https://google.github.io/styleguide/pyguide.html#Naming) for more.
 
 ## Unused variables
 
