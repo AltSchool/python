@@ -68,7 +68,7 @@ import sys                          # system library import after local imports
 
 ## Docstrings
 
-All non-trivial methods should have docstrings. Docstrings should follow guidelines here: [PEP257](http://www.python.org/dev/peps/pep-0257/). For more examples, see the [Google style guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Comments#Comments) around docstrings.
+All non-trivial methods should have docstrings. Docstrings should follow guidelines here: [PEP257](http://www.python.org/dev/peps/pep-0257/). For more examples, see the [Google style guide](https://google.github.io/styleguide/pyguide.html?showone=Comments#Comments) around docstrings.
 
 To summarize: There are two types of docstrings, long-form and short-form.
 
@@ -102,7 +102,7 @@ A function (including methods and generators) must have a docstring, unless it m
 
 The docstring should describe the function's calling syntax and its semantics, not its implementation.
 
-The docstring should end with the following special sections (see [the Google style guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Comments#Comments) for more details).
+The docstring should end with the following special sections (see [the Google style guide](https://google.github.io/styleguide/pyguide.html?showone=Comments#Comments) for more details).
 
 - **Arguments:** List each parameter by name, and a description of it. The description can span several lines (use a hanging indent if so). Use instead of "Args". 
 - **Returns:** (or **Yields:** for generators): Describe the type and semantics of the return value. If the function only returns None, this section is not required.
@@ -140,9 +140,7 @@ Start your file with a module docstring. Do not put a shebang line (`#!/usr/bin/
 
 > *Exception:* if the python file is meant to be executable, it should start with the following shebang line:
 
-> ```py
-#!/usr/bin/env python
-```
+> `#!/usr/bin/env python`
 
 > *Rationale:* a shebang line is useless for non-executable files. An `__author__` line just gets out of date, and is better determined by looking at source control history in any case. Code is automatically copyrighted; a copyright line doesn't help. No need to put this useless boilerplate at the top of the file!
 
