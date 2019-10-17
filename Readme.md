@@ -278,9 +278,9 @@ words = [
     'fox', # note the trailing comma
 ]
 
-user = (
-    User.objects.filter(name__icontains='joe').
-    values_list('user', 'username')
+user = User.objects.filter(name__icontains='joe').values_list(
+    'user', 
+    'username'
 )
 
 [{
