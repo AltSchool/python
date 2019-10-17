@@ -180,6 +180,20 @@ class FooTestCase(TestCase):
 
 Use CapitalizedCamelCase for class names, snake_case for everything else. Use CAPITALIZED_SNAKE_CASE for global consts. See the [Google style guide](https://google.github.io/styleguide/pyguide.html#Naming) for more.
 
+ * Prefer shorter names (3 words or less)
+ * Don't describe code. Names are placeholders and "mind hooks".
+ * Don't repeat what's implied in the module name or class names.
+ * Do use naming to avoid ambiguity. 
+
+## Function Length
+
+ * Prefer short and focused functions (less than 60 lines).
+ * Avoid single-line functions. 
+ * If a function exceeds 40 lines and there is an easy opportunity for refactoring, do so. 
+ * If there are more than 3 levels of indentation, try to refactor.
+
+(Based on [Google Style Guide](https://google.github.io/styleguide/pyguide.html#318-function-length))
+
 ## Unused variables
 
 If you want to assign a value to a variable that will not be used again, name the variable either `_` (python convention) or `unused_<something>` (less-well-known python convention). This will keep our lint checkers from complaining.
